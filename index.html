@@ -1,0 +1,208 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+    <h2>🍴 FoodieHub</h2>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#add">Add Blog</a>
+    </nav>
+</header>
+
+
+<!-- Home -->
+<section id="home" class="hero">
+
+    <h1>Discover. Taste. Enjoy.</h1>
+
+    <p>
+        Explore delicious recipes, world cuisines and amazing food stories.
+    </p>
+
+    <button onclick="location.href='#recipes'">
+        Explore Food
+    </button>
+
+</section>
+
+
+<!-- Search -->
+<section class="search">
+
+    <h2>🔍 Search Food</h2>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search recipes, cuisines or food..."
+    >
+
+</section>
+
+
+<!-- Food Blogs -->
+<section id="recipes">
+
+    <h2>🍕 Food Blogs</h2>
+
+    <!-- Categories -->
+    <div class="buttons">
+
+        <button onclick="filter('All')">All</button>
+
+        <button onclick="filter('Indian')">🇮🇳 Indian</button>
+
+        <button onclick="filter('Italian')">🇮🇹 Italian</button>
+
+        <button onclick="filter('Chinese')">🇨🇳 Chinese</button>
+
+        <button onclick="filter('Japanese')">🇯🇵 Japanese</button>
+
+        <button onclick="filter('Korean')">🇰🇷 Korean</button>
+
+        <button onclick="filter('Mexican')">🇲🇽 Mexican</button>
+
+        <button onclick="filter('Thai')">🇹🇭 Thai</button>
+
+        <button onclick="filter('American')">🇺🇸 American</button>
+
+        <button onclick="filter('French')">🇫🇷 French</button>
+
+        <button onclick="filter('Arabic')">🌍 Arabic</button>
+
+        <button onclick="filter('Spanish')">🇪🇸 Spanish</button>
+
+        <button onclick="filter('Turkish')">🇹🇷 Turkish</button>
+
+        <button onclick="filter('Greek')">🇬🇷 Greek</button>
+
+        <button onclick="filter('Dessert')">🍰 Desserts</button>
+
+        <button onclick="filter('Drinks')">🥤 Drinks</button>
+
+        <button onclick="filter('Seafood')">🐟 Seafood</button>
+
+        <button onclick="filter('Vegetarian')">🥗 Vegetarian</button>
+
+    </div>
+
+
+    <!-- Blogs will appear here -->
+    <div id="blogs" class="cards"></div>
+
+</section>
+
+
+<!-- Reviews -->
+<section id="reviews">
+
+    <h2>⭐ Food Reviews</h2>
+
+    <div class="review">
+
+        🍕 Pizza - ★★★★★
+        <br><br>
+
+        🍛 Biryani - ★★★★★
+        <br><br>
+
+        🍣 Sushi - ★★★★★
+        <br><br>
+
+        🌮 Tacos - ★★★★☆
+        <br><br>
+
+        🍰 Cake - ★★★★☆
+
+    </div>
+
+</section>
+
+
+<!-- Add Blog -->
+<section id="add">
+
+    <h2>✍️ Add Your Blog</h2>
+
+    <form id="form">
+
+        <input
+            type="text"
+            id="title"
+            placeholder="Blog Title"
+            required
+        >
+
+        <input
+            type="text"
+            id="image"
+            placeholder="Food Image URL"
+            required
+        >
+
+        <select id="category" required>
+
+            <option value="">Select Category</option>
+
+            <option value="Indian">Indian</option>
+            <option value="Italian">Italian</option>
+            <option value="Chinese">Chinese</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Korean">Korean</option>
+            <option value="Mexican">Mexican</option>
+            <option value="Thai">Thai</option>
+            <option value="American">American</option>
+            <option value="French">French</option>
+            <option value="Arabic">Arabic</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Turkish">Turkish</option>
+            <option value="Greek">Greek</option>
+            <option value="Dessert">Dessert</option>
+            <option value="Drinks">Drinks</option>
+            <option value="Seafood">Seafood</option>
+            <option value="Vegetarian">Vegetarian</option>
+
+        </select>
+
+
+        <textarea
+            id="description"
+            placeholder="Food description"
+            required
+        ></textarea>
+
+
+        <button type="submit">
+            Publish Blog
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- Footer -->
+<footer>
+
+    <p>© 2026 FoodieHub ❤️ | Food & Recipe Blog</p>
+
+</footer>
+
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
